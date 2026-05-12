@@ -1,0 +1,27 @@
+{
+  "name": "idp-core",
+  "version": "2.0.0",
+  "description": "Stardomes 2FA IdP — Backend Core Service",
+  "type": "module",
+  "main": "src/start.js",
+  "scripts": {
+    "start": "node --require ./src/telemetry-init.cjs src/start.js",
+    "dev": "nodemon --require ./src/telemetry-init.cjs src/start.js"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.0",
+    "@azure/monitor-query-logs": "^1.0.0",
+    "applicationinsights": "^3.13.0",
+    "base64url": "^3.0.1",
+    "cbor": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mssql": "^11.0.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
